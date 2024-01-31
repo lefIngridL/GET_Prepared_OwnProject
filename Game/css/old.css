@@ -1,0 +1,218 @@
+body{
+    margin: 0%;
+    overflow: hidden;
+    background-image: url("img/ante-hamersmit-qg6MDcCWBfM-unsplash.jpg");
+    background-size: cover;
+    
+}
+#app{
+    height: 100dvh;
+    width: 100dvw;
+}
+#welcome{
+    margin-left: 25dvw;
+}
+h2{
+    margin-left: 25dvw;
+}
+#container{
+    border-width: 1px;
+    border-style: solid;
+    width: 50dvw;
+    height: 70dvh;
+    margin-left: 25dvw;
+    background-image: -webkit-linear-gradient(rgb(0, 110, 255),white,rgba(255, 162, 125, 0.945), rgb(4, 3, 75),  rgb(63, 114, 190), white);
+    
+}
+table{
+    border-width: 1px;
+    border-style: solid;
+    min-height: 35dvh;
+    min-width: 35dvh;
+    border-collapse: collapse;
+    background-color: white;
+}
+td{
+    border-width: 1px;
+    border-style: solid;
+    
+}
+th{
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(10, 21dvh);
+    grid-template-rows: repeat(10, 21dvh);
+    
+}
+.btn{
+    width: 4dvw;
+    height: 4dvw;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4dvh;
+    grid-area: 5/5;
+    margin-top: 5dvh;
+    margin-left: 22dvh;
+    cursor: pointer;
+    background-color: white;
+}
+#homeBtn{
+    width: 10dvw;
+    height: 4dvw;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4dvh;
+    grid-area: 0/0;
+    cursor: pointer;
+    background-color: white;
+}
+#x3{
+    grid-area: 2/4;
+    height: 63dvh;
+    width: 63dvh;
+    margin-left: 14dvh;
+}
+#x5{
+    grid-area: 2/4;
+    height: 63dvh;
+    width: 63dvh;
+    margin-left: 13dvh;
+}
+#x10{
+    grid-area: 1/4;
+    height: 73dvh;
+    width: 73dvh;
+    margin-top: 14dvh;
+    margin-left: 8dvh;
+}
+#x15{
+    grid-area: 1/4;
+    margin-top: 15dvh;
+    margin-left: 10dvh;
+    height: 73dvh;
+    width: 73dvh;
+}
+
+.squares{
+    width: 1dvh;
+    padding: 0%;
+    margin: 0%;
+    border-color: black;
+    color: white;
+}
+.infoSquares{
+    width: 5dvh;
+    padding: 0%;
+    margin: 0%;
+    border-color: black;
+    color: black;
+    align-content:flex-end;
+    background-color: rgb(219, 218, 218);
+    
+    
+}
+
+
+.spanx3{
+    margin: 18%;
+    font-size: 400%;
+}
+
+.spanx5{
+    margin: 18%;
+    font-size: 250%;
+}
+
+.spanx10{
+    margin: 18%;
+    font-size: 120%;
+}
+
+.spanx15{
+    margin: 15%;
+    font-size: 90%;
+}
+
+.rowEdgex3{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 10%;
+    font-size: 4dvh;
+    padding: 3dvh;
+}
+.columnEdgex3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 4dvh;
+    margin: 10%;
+    padding: 1dvh;
+}
+.rowEdgex5{
+    display: flex;
+    flex-direction: column;
+    margin: 30%;
+    font-size: 3dvh;
+    padding: 0dvh;
+    width: 1dvh;
+    
+}
+p{
+    margin: 0%;
+    padding: 0%;
+    width: 2dvh;
+}
+.columnEdgex5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3dvh;
+    margin: 30%;
+    padding: 0dvh;
+    max-height: 1dvh;
+}
+.rowEdgex10{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 5%;
+    font-size: 2dvh;
+    padding: 1dvh;
+}
+.columnEdgex10{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2dvh;
+    margin: 5%;
+    padding: 1dvh;
+}
+.rowEdgex15{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 0%;
+    font-size: 3dvh;
+    padding: 0dvh;
+}
+.columnEdgex15{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3dvh;
+    
+}
+
+.level{
+    grid-area: 1/5;
+}
