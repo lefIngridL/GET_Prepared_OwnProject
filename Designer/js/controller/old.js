@@ -1205,6 +1205,11 @@ function downloadNonogram(grid) {
 }
 function downloadNumbers(row, column) {
     downloadNumbersCol(column);
+    downloadnumbersRow(row)
+    
+}
+
+function downloadnumbersRow(row){
     let jsonString = JSON.stringify(row);
     let blob = new Blob([jsonString], { type: "application/json" });
     let url = URL.createObjectURL(blob);
@@ -1212,7 +1217,9 @@ function downloadNumbers(row, column) {
     a.href = url;
     a.download = 'nonogramNrsRow.json';
     a.click();
+
 }
+
 function downloadNumbersCol(column) {
     let jsonString = JSON.stringify(column);
     let blob = new Blob([jsonString], { type: "application/json" });
@@ -1221,4 +1228,19 @@ function downloadNumbersCol(column) {
     a.href = url;
     a.download = 'nonogramNrsCol.json';
     a.click();
+}
+
+function downloadNonoObj(NoNoobj, row, column){
+    console.log("was reached");
+    NoNoobj.row = row;
+    NoNoobj.column = column;
+let jsonString = JSON.stringify(NoNoobj);
+let blob = new Blob([jsonString], { type: "application/json" });
+let url = URL.createObjectURL(blob);
+let a = document.createElement('a');
+a.href = url;
+a.download = "nonoGramObj.json";
+a.click();
+console.log("done?");
+console.log(jsonString);
 }

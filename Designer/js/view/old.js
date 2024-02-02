@@ -346,7 +346,7 @@ function updateViewXL() {
     <h1 class="level">level ${activePuzzle.id}</h1>
     <h2 id="life" class="level">Lives: ${lives}</h2>
     <button id="homeBtn" onclick="updateViewStart()"><=HOME</button>
-    <button id="dwnLoadBtn" onclick="downloadNonogram(levelObj.levels.level4.puzzles[D].grid); downloadNumbers(activePuzzle.rows, activePuzzle.columns)
+    <button id="dwnLoadBtn" onclick="downloadNonogram(levelObj.levels.level4.puzzles[D].grid); downloadNumbers(activePuzzle.rows, activePuzzle.columns); downloadNonoObj(levelObj.levels.level4.puzzles[D],activePuzzle.rows, activePuzzle.columns);
     ">Finish and download pattern</button>
     <button id="placeBtn" onclick="placeEdgeNr(activePuzzle)">place row numbers</button>
 

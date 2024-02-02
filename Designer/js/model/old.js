@@ -945,3 +945,10 @@ const levelObj = {
         }
     }
 };
+
+
+const testObj = [
+    [0,1,0],
+    [1,"x",1],
+    [1,1,1]
+]
